@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, Comment
 
 # Register your models here.
 # 1
@@ -24,3 +24,6 @@ class PostAdmin(admin.ModelAdmin):
         # return len(post.message)
         return f"{len(post.message)} 글자" 
 
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    pass
