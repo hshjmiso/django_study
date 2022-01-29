@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls), # URL Reverse 주소를 변경해도 찾아간다.
+    path('accounts/', include('accounts.urls')),
     path('instagram/', include('instagram.urls')),
 ]

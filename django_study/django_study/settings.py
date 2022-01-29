@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # third apps
     'django_extensions',
     # local apps
+    'accounts',
     'instagram',
 ]
 
