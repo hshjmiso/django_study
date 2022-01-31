@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls), # URL Reverse 주소를 변경해도 찾아간다.
     path('accounts/', include('accounts.urls')),
     path('instagram/', include('instagram.urls')),
+    path('blog1/', include('blog1.urls')),
 ]
